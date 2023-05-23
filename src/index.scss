@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+@import '../variable';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  background: linear-gradient(34deg, rgba(7, 33, 41, 1) 0%, rgba(17, 17, 17, 1) 40%, rgba(17, 17, 17, 1) 60%, rgba(8, 39, 54, 1) 100%);
+  color: $white;
+}
+
+body {
+  overflow-x: hidden;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.App {
+  position: relative;
+  font-family: 'Open Sans', sans-serif;
+  min-height: 300vh;
+}
+
+.text-gradient {
+  background: linear-gradient(269.08deg, $primary 0%, $secondary 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 900;
+}

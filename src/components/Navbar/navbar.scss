@@ -1,0 +1,65 @@
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 20px 30px;
+  backdrop-filter: blur(10px);
+
+  .links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+  }
+
+  @media screen and (max-width: 500px) {
+    display: none;
+  }
+}
+
+.navbar-mobile {
+  display: none;
+
+  @media screen and (max-width: 500px) {
+    display: block;
+  }
+
+  .nav {
+    @extend .navbar;
+
+    @media screen and (max-width: 500px) {
+      display: flex;
+    }
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  a,
+  #webring {
+    text-decoration: none;
+    width: 35px;
+    height: 35px;
+  }
+
+  #logo {
+    width: 20px;
+  }
+}

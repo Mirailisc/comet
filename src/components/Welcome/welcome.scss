@@ -1,0 +1,105 @@
+@import '../../../variable';
+
+.welcome {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0 200px;
+    min-height: 100vh;
+    gap: 150px;
+
+    .content {
+        h1 {
+            margin: 0;
+            font-weight: 900;
+            font-size: 48px;
+        }
+    
+        h2 {
+            font-size: 24px;
+            margin: 0;
+            font-weight: 900;
+        }
+    }
+
+    .image img {
+        width: 425px;
+        border-radius: 20px;
+    }
+
+    .image {
+        position: relative;
+        margin: 45px;
+
+        &::before {
+            content: "";
+            z-index: -1;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background: linear-gradient(-45deg, $primary 23%, $secondary 177%);
+            transform: translate3d(18px, -38px, 0) scale(0.89);
+            filter: blur(100px);
+            opacity: var(0.55);
+            transition: opacity 0.3s;
+            border-radius: inherit;
+        }
+
+        &::after {
+            content: "";
+            z-index: -1;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background: inherit;
+            border-radius: inherit;
+        }
+
+    }
+
+
+    @media screen and (max-width: 1420px) {
+        gap: 50px;
+        margin: 0 50px;
+    }
+
+    @media screen and (max-width: 1020px) {
+        .content {
+            h1 {
+                font-size: 32px;
+            }
+    
+            h2 {
+                font-size: 24px;
+            }
+        }
+
+        .image img {
+            width: 300px;
+        }
+    }
+
+    @media screen and (max-width: 780px) {
+        flex-direction: column-reverse;
+        gap: 0;
+        margin: 0;
+        justify-content: center;
+        align-items: center;
+        min-height: 95vh;
+
+        .content {
+            h1 {
+                font-size: 24px;
+            }
+    
+            h2 {
+                font-size: 20px;
+            }
+        }
+    }
+}
