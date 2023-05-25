@@ -10,6 +10,7 @@
   right: 0;
   padding: 20px 30px;
   backdrop-filter: blur(10px);
+  z-index: 10;
 
   .links {
     display: flex;
