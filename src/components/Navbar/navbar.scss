@@ -18,7 +18,7 @@
     gap: 30px;
   }
 
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 580px) {
     display: none;
   }
 }
@@ -26,14 +26,14 @@
 .navbar-mobile {
   display: none;
 
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 580px) {
     display: block;
   }
 
   .nav {
     @extend .navbar;
 
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 580px) {
       display: flex;
     }
   }

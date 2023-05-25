@@ -1,6 +1,6 @@
 import { Typography } from 'antd'
 import SlideLeft from '../animation/SlideLeft'
-import Profile from '../../assets/profile.png'
+import Profile from '../../assets/profile.webp'
 import './welcome.scss'
 
 import { motion } from 'framer-motion'

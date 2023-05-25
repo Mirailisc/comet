@@ -29,6 +29,7 @@ const Navbar: React.FC = (): JSX.Element => {
           <Text strong>Home</Text>
           <Text strong>About</Text>
           <Text strong>Skills</Text>
+          <Text strong>Experiences</Text>
           <Button type="primary">Contact</Button>
         </div>
       </Drop>
@@ -42,6 +43,7 @@ const Navbar: React.FC = (): JSX.Element => {
             <Text strong>Home</Text>
             <Text strong>About</Text>
             <Text strong>Skills</Text>
+            <Text strong>Experiences</Text>
             <Button type="primary">Contact</Button>
           </Drop>
         )}

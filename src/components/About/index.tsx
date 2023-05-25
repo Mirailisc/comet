@@ -22,7 +22,7 @@ const About: React.FC = (): JSX.Element => {
             </Link>
             <Text>
               I&apos;m a sophomore college student based in Bangkok, Thailand, and I love to create funny things with
-              the desire to become a developer.
+              the desire to become a web developer.
             </Text>
             <Text>
               I have two years of experience in front-end development and I also interested in

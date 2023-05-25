@@ -7,6 +7,8 @@ import ScrollProgress from './components/animation/ScrollProgress'
 const Navbar = React.lazy(() => import('./components/Navbar'))
 const Welcome = React.lazy(() => import('./components/Welcome'))
 const About = React.lazy(() => import('./components/About'))
+const Skills = React.lazy(() => import('./components/Skills'))
+const Experience = React.lazy(() => import('./components/Experience'))
 
 const App: React.FC = (): JSX.Element => {
   return (
@@ -16,6 +18,8 @@ const App: React.FC = (): JSX.Element => {
           <Navbar />
           <Welcome />
           <About />
+          <Skills />
+          <Experience />
         </div>
         <ScrollProgress />
       </ConfigProvider>
