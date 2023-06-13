@@ -14,7 +14,7 @@ const Experience: React.FC = (): JSX.Element => {
     <div className="experience">
       <div className="header">
         <Title level={2} className="text-gradient">
-          Experience
+          EXPERIENCE
         </Title>
       </div>
       {RenderWorkContents}

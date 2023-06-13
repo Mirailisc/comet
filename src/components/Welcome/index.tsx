@@ -1,35 +1,27 @@
-import { Typography } from 'antd'
-import SlideLeft from '../animation/SlideLeft'
-import Profile from '../../assets/profile.webp'
 import './welcome.scss'
-
 import { motion } from 'framer-motion'
+import { Link } from 'react-router-dom'
 
 const Welcome: React.FC = (): JSX.Element => {
-  const { Title } = Typography
-
   return (
     <div className="welcome">
-      <SlideLeft className="content">
-        <Title>Hi, I&apos;m Phubordin Poolnai</Title>
-        <Title level={2} className="text-gradient">
-          Frontend Developer
-        </Title>
-      </SlideLeft>
-      <div className="image">
-        <motion.img
-          animate={{
-            x: 0,
-          }}
-          initial={{
-            x: 500,
-          }}
-          transition={{ type: 'spring', restSpeed: 0.7 }}
-          src={Profile}
-          alt="profile"
-          loading="lazy"
-        />
-        <div className="glow" />
+      <div className="text">
+        <div className="header">
+          <motion.h1 animate={{ y: 0 }} initial={{ y: '100%' }} transition={{ delay: 0.2, duration: 0.3 }}>
+            Phubordin Poolnai
+          </motion.h1>
+          <motion.h2
+            animate={{ y: 0 }}
+            initial={{ y: '100%' }}
+            transition={{ delay: 0.3, duration: 0.3 }}
+            className="sub-header"
+          >
+            Frontend Developer
+          </motion.h2>
+        </div>
+        <Link to="/contact">
+          <button className="button">Contact</button>
+        </Link>
       </div>
     </div>
   )

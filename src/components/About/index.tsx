@@ -9,7 +9,7 @@ const About: React.FC = (): JSX.Element => {
   return (
     <div className="about">
       <Title level={2} className="text-gradient">
-        About Me
+        ABOUT
       </Title>
       <div className="container">
         <div className="model">
@@ -21,14 +21,13 @@ const About: React.FC = (): JSX.Element => {
               <img src={KMUTT} alt="college" width={100} />
             </Link>
             <Text>
-              I&apos;m a sophomore college student based in Bangkok, Thailand, and I love to create funny things with
-              the desire to become a web developer.
+              Hello I&apos;m Mark, a college student and front-end developer based in Thailand, and I love to create
+              things that will make people happy.
             </Text>
             <Text>
-              I have two years of experience in front-end development and I also interested in
-              <Text code>backend & mobile</Text>
-              development
+              I&apos;m currently working at NUD Channel on a gallery website for my high school&apos;s events.
             </Text>
+            <Text>I&apos;m interested in networking, DevOps, designing systems, and backend development.</Text>
           </Space>
         </div>
       </div>

@@ -1,22 +1,22 @@
 import Drop from '../animation/Drop'
 import Logo from '../../assets/Logo.svg'
 import Webring from '../../assets/Webring.svg'
-import { Button, Typography } from 'antd'
+import { Button } from 'antd'
 import { EllipsisOutlined } from '@ant-design/icons'
 import './navbar.scss'
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 const Navbar: React.FC = (): JSX.Element => {
   const [isOpen, setOpen] = useState<boolean>(false)
-  const { Text, Link } = Typography
 
   const LogoComponent: React.FC = (): JSX.Element => {
     return (
       <div className="logo">
         <img id="logo" src={Logo} alt="logo" loading="lazy" />
-        <Link href="https://webring.wonderful.software/#mirailisc.me" target="_blank">
+        <a href="https://webring.wonderful.software/#mirailisc.me" target="_blank" rel="noreferrer">
           <img id="webring" src={Webring} alt="webring" loading="lazy" />
-        </Link>
+        </a>
       </div>
     )
   }
@@ -26,11 +26,15 @@ const Navbar: React.FC = (): JSX.Element => {
       <Drop className="navbar">
         <LogoComponent />
         <div className="links">
-          <Text strong>Home</Text>
-          <Text strong>About</Text>
-          <Text strong>Skills</Text>
-          <Text strong>Experiences</Text>
-          <Button type="primary">Contact</Button>
+          <Link to="/">
+            <div className="link__text">Home</div>
+          </Link>
+          <Link to="/project">
+            <div className="link__text">Project</div>
+          </Link>
+          <Link to="/contact">
+            <Button type="primary">Contact</Button>
+          </Link>
         </div>
       </Drop>
       <div className="navbar-mobile">
@@ -40,10 +44,12 @@ const Navbar: React.FC = (): JSX.Element => {
         </div>
         {isOpen && (
           <Drop className="content">
-            <Text strong>Home</Text>
-            <Text strong>About</Text>
-            <Text strong>Skills</Text>
-            <Text strong>Experiences</Text>
+            <Link to="/">
+              <div className="link__text">Home</div>
+            </Link>
+            <Link to="/project">
+              <div className="link__text">Project</div>
+            </Link>
             <Button type="primary">Contact</Button>
           </Drop>
         )}

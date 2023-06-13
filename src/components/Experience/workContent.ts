@@ -1,6 +1,6 @@
 export const workContent: IWorkContent[] = [
   {
-    title: 'Datability',
+    title: 'Datability Co., Ltd.',
     date: 'Jul 2021 - Nov 2021',
     position: 'Intern Frontend Developer',
     description: [

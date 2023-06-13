@@ -8,14 +8,15 @@
 }
 
 :root {
-  background: linear-gradient(34deg, rgba(7, 33, 41, 1) 0%, rgba(17, 17, 17, 1) 40%, rgba(17, 17, 17, 1) 60%, rgba(8, 39, 54, 1) 100%);
   color: $white;
+  background: linear-gradient(252.44deg, #0A1118 0%, #000000 100%);
 }
 
 body {
   overflow-x: hidden;
   -ms-overflow-style: none;
   scrollbar-width: none;
+  font-family: 'Open Sans', sans-serif;
 }
 
 body::-webkit-scrollbar {
@@ -24,14 +25,9 @@ body::-webkit-scrollbar {
 
 .App {
   position: relative;
-  font-family: 'Open Sans', sans-serif;
-  min-height: 300vh;
 }
 
 .text-gradient {
-  background: linear-gradient(269.08deg, $primary 0%, $secondary 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  text-shadow: rgba(77, 80, 255, 0.6) -1px -1px 6px, rgba(124, 246, 255, 0.6) 1px 1px 6px;
   font-weight: 900 !important;
 }
