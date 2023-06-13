@@ -32,9 +32,6 @@ const Navbar: React.FC = (): JSX.Element => {
           <Link to="/project">
             <div className="link__text">Project</div>
           </Link>
-          <Link to="/contact">
-            <Button type="primary">Contact</Button>
-          </Link>
         </div>
       </Drop>
       <div className="navbar-mobile">
@@ -50,7 +47,6 @@ const Navbar: React.FC = (): JSX.Element => {
             <Link to="/project">
               <div className="link__text">Project</div>
             </Link>
-            <Button type="primary">Contact</Button>
           </Drop>
         )}
       </div>

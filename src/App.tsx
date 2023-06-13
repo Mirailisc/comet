@@ -11,7 +11,7 @@ const Welcome = React.lazy(() => import('./components/Welcome'))
 const About = React.lazy(() => import('./components/About'))
 const Experience = React.lazy(() => import('./components/Experience'))
 const Footer = React.lazy(() => import('./components/Footer'))
-const Contact = React.lazy(() => import('./components/Contact'))
+const Project = React.lazy(() => import('./components/Project'))
 
 const App: React.FC = (): JSX.Element => {
   const location = useLocation()
@@ -37,7 +37,7 @@ const App: React.FC = (): JSX.Element => {
         <Navbar />
         <Routes location={location} key={location.pathname}>
           <Route path="/" element={<HomePage />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route path="/project" element={<Project />} />
         </Routes>
         {location.pathname === '/' && <Footer />}
         {location.pathname === '/' && <ScrollProgress />}

@@ -1,13 +1,21 @@
+import { Button, Typography } from 'antd'
 import './welcome.scss'
 import { motion } from 'framer-motion'
-import { Link } from 'react-router-dom'
+import { GithubOutlined, TwitterOutlined, LinkedinOutlined, MailOutlined, FacebookOutlined } from '@ant-design/icons'
 
 const Welcome: React.FC = (): JSX.Element => {
+  const { Link } = Typography
+
   return (
     <div className="welcome">
       <div className="text">
         <div className="header">
-          <motion.h1 animate={{ y: 0 }} initial={{ y: '100%' }} transition={{ delay: 0.2, duration: 0.3 }}>
+          <motion.h1
+            className="text-gradient"
+            animate={{ y: 0 }}
+            initial={{ y: '100%' }}
+            transition={{ delay: 0.2, duration: 0.3 }}
+          >
             Phubordin Poolnai
           </motion.h1>
           <motion.h2
@@ -19,9 +27,23 @@ const Welcome: React.FC = (): JSX.Element => {
             Frontend Developer
           </motion.h2>
         </div>
-        <Link to="/contact">
-          <button className="button">Contact</button>
-        </Link>
+        <div className="links">
+          <Link href="https://github.com/Mirailisc" target="_blank">
+            <Button shape="circle" icon={<GithubOutlined />} />
+          </Link>
+          <Link href="https://twitter.com/Mirailisc" target="_blank">
+            <Button shape="circle" icon={<TwitterOutlined />} />
+          </Link>
+          <Link href="https://linkedin.com/in/phubordin/" target="_blank">
+            <Button shape="circle" icon={<LinkedinOutlined />} />
+          </Link>
+          <Link href="mailto:mirailisclm@gmail.com" target="_blank">
+            <Button shape="circle" icon={<MailOutlined />} />
+          </Link>
+          <Link href="https://facebook.com/AtsuiMatsuri/" target="_blank">
+            <Button shape="circle" icon={<FacebookOutlined />} />
+          </Link>
+        </div>
       </div>
     </div>
   )

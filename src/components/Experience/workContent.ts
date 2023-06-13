@@ -1,7 +1,7 @@
 export const workContent: IWorkContent[] = [
   {
-    title: 'Datability Co., Ltd.',
-    date: 'Jul 2021 - Nov 2021',
+    title: 'Intern Frontend Developer @ Datability Co., Ltd.',
+    date: 'Jul 2021 - Oct 2021',
     position: 'Intern Frontend Developer',
     description: [
       'My job is to develop a CRM website for 3 Small and Medium-sized Enterprise companies with seniors in the company',
@@ -9,7 +9,7 @@ export const workContent: IWorkContent[] = [
     ],
   },
   {
-    title: 'NUD Channel',
+    title: 'Frontend Engineer @ NUD Channel',
     date: 'Jul 2022 - Present',
     position: 'Frontend Engineer',
     description: [
