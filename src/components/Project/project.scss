@@ -1,12 +1,25 @@
 .project {
-    margin: 0 auto;
-    width: 1024px;
+  margin: 0 auto;
+  width: 1024px;
 
-    .header {
-        overflow: hidden;
-    }
+  .header {
+    overflow: hidden;
+  }
 
-    .content {
-        margin: 2rem 0;
+  .content {
+    margin: 2rem 0;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+
+    @media (max-width: 512px) {
+      grid-template-columns: 1fr;
     }
+  }
+
+  @media screen and (max-width: 1024px) {
+    width: 100%;
+    margin: auto;
+    padding: 0 10px;
+  }
 }

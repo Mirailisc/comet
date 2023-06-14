@@ -1,4 +1,3 @@
-import { Row } from 'antd'
 import Card from './Card'
 import './project.scss'
 import { motion } from 'framer-motion'
@@ -23,9 +22,7 @@ const Project: React.FC = (): JSX.Element => {
             PROJECTS
           </motion.h1>
         </div>
-        <div className="content">
-          <Row gutter={[16, 16]}>{renderProjects}</Row>
-        </div>
+        <div className="content">{renderProjects}</div>
       </div>
     </motion.div>
   )

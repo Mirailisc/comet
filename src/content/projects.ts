@@ -1,10 +1,10 @@
 import { IProjectContent, ProjectStatus } from './types/project'
-import project1 from '../assets/project-1.png'
-import project2 from '../assets/project-2.png'
-import project3 from '../assets/project-3.png'
-import project4 from '../assets/project-4.png'
-import project5 from '../assets/project-5.png'
-import project6 from '../assets/project-6.png'
+import project1 from '../assets/project/project-1.webp'
+import project2 from '../assets/project/project-2.webp'
+import project3 from '../assets/project/project-3.webp'
+import project4 from '../assets/project/project-4.webp'
+import project5 from '../assets/project/project-5.webp'
+import project6 from '../assets/project/project-6.webp'
 
 export const Projects: IProjectContent[] = [
   {
