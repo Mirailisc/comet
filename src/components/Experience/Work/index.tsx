@@ -1,4 +1,4 @@
-import { IWorkContent } from '../workContent'
+import { IWorkContent } from '../../../content/types/work'
 import { List, Typography } from 'antd'
 
 const Work: React.FC<Props> = ({ content }: Props): JSX.Element => {

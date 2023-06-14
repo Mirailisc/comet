@@ -1,3 +1,5 @@
+import { IWorkContent } from './types/work'
+
 export const workContent: IWorkContent[] = [
   {
     title: 'Intern Frontend Developer @ Datability Co., Ltd.',
@@ -19,10 +21,3 @@ export const workContent: IWorkContent[] = [
     ],
   },
 ]
-
-export interface IWorkContent {
-  title: string
-  date: string
-  position: string
-  description?: string[]
-}

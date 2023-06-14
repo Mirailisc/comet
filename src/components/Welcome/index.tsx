@@ -18,6 +18,8 @@ const Welcome: React.FC = (): JSX.Element => {
           >
             Phubordin Poolnai
           </motion.h1>
+        </div>
+        <div className="header">
           <motion.h2
             animate={{ y: 0 }}
             initial={{ y: '100%' }}
@@ -37,11 +39,11 @@ const Welcome: React.FC = (): JSX.Element => {
           <Link href="https://linkedin.com/in/phubordin/" target="_blank">
             <Button shape="circle" icon={<LinkedinOutlined />} />
           </Link>
-          <Link href="mailto:mirailisclm@gmail.com" target="_blank">
-            <Button shape="circle" icon={<MailOutlined />} />
-          </Link>
           <Link href="https://facebook.com/AtsuiMatsuri/" target="_blank">
             <Button shape="circle" icon={<FacebookOutlined />} />
+          </Link>
+          <Link href="mailto:mirailisclm@gmail.com" target="_blank">
+            <Button shape="circle" icon={<MailOutlined />} />
           </Link>
         </div>
       </div>

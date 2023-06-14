@@ -1,0 +1,13 @@
+version: '3.5'
+services:
+  app:
+    container_name: six-number
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - '.:/usr/src/app'
+    expose:
+      - '80'
+    ports:
+      - '8082:80'

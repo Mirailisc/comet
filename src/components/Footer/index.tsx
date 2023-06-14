@@ -2,11 +2,13 @@ import { Typography } from 'antd'
 import './footer.scss'
 
 const Footer: React.FC = (): JSX.Element => {
-  const { Text } = Typography
+  const { Text, Link } = Typography
 
   return (
     <div className="footer">
-      <Text>© 2022 Phubordin Poolnai. All Rights Reserved.</Text>
+      <Text>
+        © 2023 <Link href="https://youtu.be/SHkF48SgiSA">Phubordin Poolnai</Link>. All Rights Reserved.
+      </Text>
     </div>
   )
 }
