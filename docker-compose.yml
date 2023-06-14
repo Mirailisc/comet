@@ -1,7 +1,7 @@
 version: '3.5'
 services:
   app:
-    container_name: six-number
+    container_name: comet
     build:
       context: .
       dockerfile: Dockerfile
