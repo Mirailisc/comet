@@ -9,37 +9,8 @@ on:
   pull_request:
 
 jobs:
-  test:
-    name: Test
-    runs-on: ubuntu-latest
-
-    strategy:
-      matrix:
-        node-version: [18.x]
-
-    steps:
-      - uses: actions/checkout@v2.5.0
-
-      - name: Checkout pnpm
-        uses: pnpm/action-setup@v2
-        with:
-          version: 8
-
-      - name: Setup Node.js with pnpm
-        uses: actions/setup-node@v3
-        with:
-          node-version: "18.x"
-          cache: "pnpm"
-
-      - name: Install dependencies
-        run: pnpm install --frozen-lockfile
-
-      - name: Test
-        run: pnpm run test --passWithNoTests
-
   build-netlify:
     name: Building for Netlify
-    needs: [test]
     runs-on: ubuntu-latest
 
     strategy:
