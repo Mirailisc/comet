@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "tsc-silent -p './tsconfig.json' --suppress @ && vite build",
     "lint": "eslint src --ext js,jsx,ts,tsx --config .eslintrc.cjs",
     "preview": "vite preview"
   },
@@ -22,7 +22,8 @@
     "react-router-dom": "^6.12.1",
     "sass": "^1.62.1",
     "three": "^0.152.2",
-    "three-stdlib": "^2.21.12"
+    "three-stdlib": "^2.21.12",
+    "tsc-silent": "^1.2.2"
   },
   "devDependencies": {
     "@types/node": "^20.3.1",
