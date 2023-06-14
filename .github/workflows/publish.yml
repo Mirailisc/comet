@@ -20,13 +20,15 @@ jobs:
     steps:
       - uses: actions/checkout@v2.5.0
 
-      - uses: pnpm/action-setup@v2.2.4
+      - name: Checkout pnpm
+        uses: pnpm/action-setup@v2
         with:
-          version: 7.11.0
+          version: 8
 
-      - uses: actions/setup-node@v3.5.1
+      - name: Setup Node.js with pnpm
+        uses: actions/setup-node@v3
         with:
-          node-version: ${{ matrix.node-version }}
+          node-version: "18.x"
           cache: "pnpm"
 
       - name: Install dependencies
