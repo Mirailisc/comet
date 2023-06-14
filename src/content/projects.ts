@@ -8,10 +8,11 @@ import project6 from '../assets/project/project-6.webp'
 
 export const Projects: IProjectContent[] = [
   {
-    name: 'Project 1',
+    name: '6-number',
     status: ProjectStatus.ONGOING,
     image: project1,
     url: 'https://digits.mirailisc.me',
+    repo: 'https://github.com/Mirailisc/6-number',
   },
   {
     name: 'Project Comet',
