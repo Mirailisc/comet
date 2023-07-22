@@ -8,10 +8,13 @@
     "dev": "vite",
     "build": "tsc-silent -p './tsconfig.json' --suppress @ && vite build",
     "lint": "eslint src --ext js,jsx,ts,tsx --config .eslintrc.cjs",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "changeset": "npx changeset",
+    "release": "npx changeset publish"
   },
   "dependencies": {
     "@ant-design/icons": "^5.1.0",
+    "@changesets/cli": "^2.26.2",
     "@motionone/utils": "^10.15.1",
     "@react-three/drei": "^9.68.6",
     "@react-three/fiber": "^8.13.0",
