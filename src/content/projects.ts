@@ -11,14 +11,14 @@ export const Projects: IProjectContent[] = [
     name: '6-number',
     status: ProjectStatus.ONGOING,
     image: project1,
-    url: 'https://digits.mirailisc.me',
+    url: 'https://digits.mirailisc.xyz',
     repo: 'https://github.com/Mirailisc/6-number',
   },
   {
     name: 'Project Comet',
     status: ProjectStatus.ONGOING,
     image: project3,
-    url: 'https://mirailisc.me',
+    url: 'https://mirailisc.xyz',
     repo: 'https://github.com/Mirailisc/project-comet',
   },
   {
