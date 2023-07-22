@@ -1,5 +1,5 @@
 ![eslint](https://github.com/Mirailisc/Mirai/actions/workflows/eslint.yml/badge.svg)
-[![Netlify Status](https://api.netlify.com/api/v1/badges/0e31f232-7cc2-43d8-b4a8-a23043574d23/deploy-status)](https://app.netlify.com/sites/mirailisc/deploys)
+![vercel](https://vercelbadge.vercel.app/api/mirailisc/project-comet)
 
 # Comet
 Personal Portfolio website
