@@ -29,7 +29,7 @@ export const Projects: IProjectContent[] = [
   },
   {
     name: 'Obamium',
-    status: ProjectStatus.ONGOING,
+    status: ProjectStatus.STOPPED,
     image: project6,
     url: 'https://obamium.netlify.app/',
     repo: 'https://github.com/Mirailisc/test-three-js-react',
