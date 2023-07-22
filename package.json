@@ -9,8 +9,8 @@
     "build": "tsc-silent -p './tsconfig.json' --suppress @ && vite build",
     "lint": "eslint src --ext js,jsx,ts,tsx --config .eslintrc.cjs",
     "preview": "vite preview",
-    "changeset": "npx changeset",
-    "release": "npx changeset publish"
+    "changeset": "changeset",
+    "release": "changeset publish"
   },
   "dependencies": {
     "@ant-design/icons": "^5.1.0",
