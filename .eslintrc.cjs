@@ -32,7 +32,7 @@ module.exports = {
     'react/jsx-uses-react': 'error',
     'react/react-in-jsx-scope': 'off',
     '@typescript-eslint/no-unused-vars': 'warn',
-    '@typescript-eslint/no-explicit-any': 'off',
+    '@typescript-eslint/no-explicit-any': 'error',
     'prefer-const': 'off',
     '@typescript-eslint/ban-types': 'off',
     'no-console': 'warn',
