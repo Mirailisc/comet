@@ -29,7 +29,7 @@
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.12.1",
     "sass": "^1.62.1",
-    "three": "^0.154.0",
+    "three": "^0.155.0",
     "three-stdlib": "^2.21.12",
     "tsc-silent": "^1.2.2"
   },
