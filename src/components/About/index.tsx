@@ -18,10 +18,10 @@ const About: React.FC = (): JSX.Element => {
         <div className="content">
           <Space direction="vertical">
             <Link href="https://kmutt.ac.th" target="_blank">
-              <img src={KMUTT} alt="college" width={100} />
+              <img src={KMUTT} alt="college" width={100} loading="lazy" />
             </Link>
             <Text>
-              Hello I&apos;m Mark, a college student and front-end developer based in Thailand, and I love to create
+              Hello, I&apos;m Mark, a college student and front-end developer based in Thailand, and I love to create
               things that will make people happy.
             </Text>
             <Text>
