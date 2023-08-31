@@ -11,11 +11,19 @@ export const workContent: IWorkContent[] = [
   },
   {
     title: 'Frontend Engineer @ NUD Channel',
-    date: 'Jul 2022 - Present',
+    date: 'Jul 2022 - Jul 2023',
     description: [
       'My job is to develop and maintain every front-end application',
       'I also teach my junior about basic web development and JavaScript',
       'I work with a lot of technologies like Nuxt, TypeScript, GraphQL, Docker, Kubernetes and GitLab',
+    ],
+  },
+  {
+    title: 'Frontend Developer (Freelance) @ Bitsoft',
+    date: 'Jul 2023 - Aug 2023',
+    description: [
+      'My job is to help developer team to develop Manufacturing application for a client',
+      'I work with a few technologies like Vite, React and GraphQL',
     ],
   },
   {

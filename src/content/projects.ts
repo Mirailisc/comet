@@ -5,8 +5,16 @@ import project3 from '../assets/project/project-3.webp'
 import project4 from '../assets/project/project-4.webp'
 import project5 from '../assets/project/project-5.webp'
 import project6 from '../assets/project/project-6.webp'
+import project7 from '../assets/project/project-7.webp'
 
 export const Projects: IProjectContent[] = [
+  {
+    name: 'Prompt Jai',
+    status: ProjectStatus.ONGOING,
+    image: project7,
+    url: 'https://qr.mirailisc.xyz',
+    repo: 'https://github.com/Mirailisc/prompt-jai',
+  },
   {
     name: '6-number',
     status: ProjectStatus.ONGOING,
@@ -31,7 +39,6 @@ export const Projects: IProjectContent[] = [
     name: 'Obamium',
     status: ProjectStatus.STOPPED,
     image: project6,
-    url: 'https://obamium.netlify.app/',
     repo: 'https://github.com/Mirailisc/test-three-js-react',
   },
   {

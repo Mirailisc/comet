@@ -2,10 +2,10 @@ import Drop from '../animation/Drop'
 import Logo from '../../assets/Logo.svg'
 import Webring from '../../assets/Webring.svg'
 import { Button } from 'antd'
-import { EllipsisOutlined } from '@ant-design/icons'
 import './navbar.scss'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
+import { EllipsisOutlined } from '@ant-design/icons'
 
 const Navbar: React.FC = (): JSX.Element => {
   const [isOpen, setOpen] = useState<boolean>(false)
