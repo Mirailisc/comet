@@ -2,36 +2,28 @@ import { IWorkContent } from './types/work'
 
 export const workContent: IWorkContent[] = [
   {
-    title: 'Intern Frontend Developer @ Datability Co., Ltd.',
+    title: 'Frontend Developer (Intern) @ Datability Co., Ltd.',
     date: 'Jul 2021 - Oct 2021',
     description: [
-      'My job is to develop a CRM website for 3 Small and Medium-sized Enterprise companies with seniors in the company',
+      'My job is to develop a CRM website for three small and medium-sized enterprise companies with seniors in the company.',
       'I work with a few technologies like React, TypeScript, GraphQL, and SASS.',
     ],
   },
   {
-    title: 'Frontend Engineer @ NUD Channel',
+    title: 'Fullstack Developer @ NUD Channel',
     date: 'Jul 2022 - Jul 2023',
     description: [
-      'My job is to develop and maintain every front-end application',
-      'I also teach my junior about basic web development and JavaScript',
-      'I work with a lot of technologies like Nuxt, TypeScript, GraphQL, Docker, Kubernetes and GitLab',
+      'My job is to develop and maintain the infrastructure.',
+      'I also teach my juniors about basic to advanced web development.',
+      'I work with a lot of technologies, like NuxtJS, TypeScript, GraphQL, NestJS, Docker, Kubernetes, and GitLab.',
     ],
   },
   {
     title: 'Frontend Developer (Freelance) @ Bitsoft',
     date: 'Jul 2023 - Aug 2023',
     description: [
-      'My job is to help developer team to develop Manufacturing application for a client',
-      'I work with a few technologies like Vite, React and GraphQL',
-    ],
-  },
-  {
-    title: 'Computer Engineering @ KMUTT',
-    date: 'June 2023 - Present',
-    description: [
-      "Start bachelor's degree at King Mongkut's University of Technology Thonburi",
-      'Contribute to the KMUTT Project Hub and Student Union Team.',
+      'My job is to help the developer team develop a manufacturing application for a client.',
+      'I work with a few technologies, like Vite, React, and GraphQL Apollo.',
     ],
   },
 ]

@@ -10,7 +10,7 @@ const Card: React.FC<Props> = ({ project }: Props): JSX.Element => {
   return (
     <div className="card-border">
       <div className="card">
-        <Image className="image" src={project.image} />
+        <Image preview={false} className="image" src={project.image} />
         <Title level={4}>{project.name}</Title>
         <StatusBadge status={project.status} />
         <Divider />

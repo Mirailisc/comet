@@ -5,7 +5,6 @@
     
     .header {
         margin-bottom: 3rem;
-        text-align: center;
     }
 
     .work {
@@ -26,5 +25,9 @@
     @media screen and (max-width: 768px) {
         width: 100%;
         padding: 0 10px;
+
+        .header {
+            text-align: center;
+        }
     }
 }

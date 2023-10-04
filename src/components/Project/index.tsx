@@ -1,13 +1,15 @@
 import Card from './Card'
 import './project.scss'
 import { motion } from 'framer-motion'
-import { Projects } from '../../content/projects'
+import { projects } from '../../content/projects'
 import { IProjectContent } from '../../content/types/project'
+import { useMemo } from 'react'
 
 const Project: React.FC = (): JSX.Element => {
-  const renderProjects = Projects.map((project: IProjectContent, index: number) => (
-    <Card project={project} key={index} />
-  ))
+  const renderProjects = useMemo(
+    () => projects.map((project: IProjectContent, index: number) => <Card project={project} key={index} />),
+    []
+  )
 
   return (
     <div className="project">
