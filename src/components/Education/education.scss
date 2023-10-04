@@ -1,0 +1,45 @@
+.education {
+  margin: 0 auto;
+  width: 1024px;
+  margin-bottom: 10rem;
+
+  .educations {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    .content {
+      border: 1px solid #ffffff;
+      padding: 10px 20px;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+      align-items: center;
+
+      .date {
+        color: #acacac;
+      }
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    width: 768px;
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    padding: 0 10px;
+
+    .header {
+        text-align: center;
+    }
+
+    .educations {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+  }
+}

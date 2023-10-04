@@ -1,10 +1,9 @@
 import NightCatCanvas from '../NightCat'
 import './about.scss'
 import { Space, Typography } from 'antd'
-import KMUTT from '../../assets/kmutt.png'
 
 const About: React.FC = (): JSX.Element => {
-  const { Title, Text, Link } = Typography
+  const { Title, Text } = Typography
 
   return (
     <div className="about">
@@ -17,15 +16,12 @@ const About: React.FC = (): JSX.Element => {
         </div>
         <div className="content">
           <Space direction="vertical">
-            <Link href="https://kmutt.ac.th" target="_blank">
-              <img src={KMUTT} alt="college" width={100} loading="lazy" />
-            </Link>
             <Text>
-              Hello, I&apos;m Mark, a college student and front-end developer based in Thailand, and I love to create
+              Hello, I&apos;m Mark, a college student and frontend developer based in Thailand, and I love to create
               things that will make people happy.
             </Text>
             <Text>
-              I&apos;m currently working at NUD Channel on a gallery website for my high school&apos;s events.
+              I&apos;m currently working on my personal projects and helping my college&apos;s student union team.
             </Text>
             <Text>I&apos;m interested in networking, DevOps, designing systems, and backend development.</Text>
           </Space>

@@ -5,6 +5,7 @@ import { customTheme } from './utils/theme'
 import ScrollProgress from './components/animation/ScrollProgress'
 import { Routes, Route, useLocation } from 'react-router-dom'
 import { AnimatePresence, motion } from 'framer-motion'
+import { BASE_PATH, PROJECT_PATH } from './utils/routes'
 
 const Navbar = React.lazy(() => import('./components/Navbar'))
 const Home = React.lazy(() => import('./components/Home'))
@@ -36,11 +37,11 @@ const App: React.FC = (): JSX.Element => {
         <Navbar />
         <AnimatePresence initial={false} mode="wait">
           <Routes location={location} key={location.pathname}>
-            <Route path="/" element={<HomePage />} />
-            <Route path="/project" element={<ProjectPage />} />
+            <Route path={BASE_PATH} element={<HomePage />} />
+            <Route path={PROJECT_PATH} element={<ProjectPage />} />
           </Routes>
         </AnimatePresence>
-        {location.pathname === '/' && <Footer />}
+        <Footer />
         <ScrollProgress />
       </ConfigProvider>
     </Suspense>

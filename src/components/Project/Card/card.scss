@@ -1,17 +1,17 @@
 .card-border {
-    background: linear-gradient(138deg, rgba(255,255,255,1) 0%, rgba(157,157,157,1) 100%);
-    padding: 1px;
+  padding: 1px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 1);
+
+  .card {
+    background: #000000;
     border-radius: 10px;
+    padding: 10px 20px;
 
-    .card {
-        background: #000000;
-        border-radius: 10px;
-        padding: 10px 20px;
-
-        .image {
-            margin-block: 10px;
-            border-radius: 10px;
-            width: 100%;
-        }
+    .image {
+      margin-block: 10px;
+      border-radius: 10px;
+      width: 100%;
     }
+  }
 }
