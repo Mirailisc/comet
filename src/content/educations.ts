@@ -1,6 +1,6 @@
 import { IEducationContent } from './types/educations'
-import KMUTT from '../assets/kmutt.png'
-import NUD from '../assets/NUD.png'
+import KMUTT from '../assets/kmutt.webp'
+import NUD from '../assets/NUD.webp'
 
 export const educationContents: IEducationContent[] = [
   {
