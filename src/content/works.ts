@@ -13,7 +13,7 @@ export const workContent: IWorkContent[] = [
     title: 'Fullstack Developer @ NUD Channel',
     date: 'Jul 2022 - Jul 2023',
     description: [
-      'My job is to develop and maintain the infrastructure.',
+      'My job is to develop and maintain every application and the infrastructure.',
       'I also teach my juniors about basic to advanced web development.',
       'I work with a lot of technologies, like NuxtJS, TypeScript, GraphQL, NestJS, Docker, Kubernetes, and GitLab.',
     ],

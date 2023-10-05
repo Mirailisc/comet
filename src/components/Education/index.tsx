@@ -11,7 +11,7 @@ const Education: React.FC = (): JSX.Element => {
     return educationContents.map((content: IEducationContent, i: number) => {
       return (
         <div className="content" key={i}>
-          <Image preview={false} width={100} height={100} src={content.image} />
+          <Image preview={false} className="image" src={content.image} />
           <div>
             <Title level={5}>{content.name}</Title>
             <Text strong>{content.location}</Text>

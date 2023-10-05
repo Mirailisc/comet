@@ -18,6 +18,11 @@
       gap: 20px;
       align-items: center;
 
+      .image {
+        width: 100px;
+        height: 100px;
+      }
+
       .date {
         color: #acacac;
       }
@@ -40,6 +45,10 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
+        .content {
+          width: 100%;
+        }
     }
   }
 }
