@@ -1,4 +1,4 @@
-![eslint](https://github.com/Mirailisc/Mirai/actions/workflows/eslint.yml/badge.svg)
+![eslint](https://github.com/Mirailisc/project-comet/actions/workflows/eslint.yml/badge.svg)
 ![vercel](https://vercelbadge.vercel.app/api/mirailisc/project-comet)
 
 # Comet
