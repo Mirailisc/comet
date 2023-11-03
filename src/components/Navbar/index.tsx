@@ -6,6 +6,7 @@ import './navbar.scss'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { EllipsisOutlined } from '@ant-design/icons'
+import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll'
 
 const Navbar: React.FC = (): JSX.Element => {
   const [isOpen, setOpen] = useState<boolean>(false)
@@ -26,9 +27,18 @@ const Navbar: React.FC = (): JSX.Element => {
       <Drop className="navbar">
         <LogoComponent />
         <div className="links">
-          <Link to="/">
+          <Link to="/" onClick={() => scroll.scrollToTop()}>
             <div className="link__text">Home</div>
           </Link>
+          <ScrollLink to="about" smooth={true}>
+            <div className="link__text">About Me</div>
+          </ScrollLink>
+          <ScrollLink to="experience" smooth={true}>
+            <div className="link__text">Skills</div>
+          </ScrollLink>
+          <ScrollLink to="education" smooth={true}>
+            <div className="link__text">Educations</div>
+          </ScrollLink>
           <Link to="/project">
             <div className="link__text">Project</div>
           </Link>
@@ -41,9 +51,18 @@ const Navbar: React.FC = (): JSX.Element => {
         </div>
         {isOpen && (
           <Drop className="content">
-            <Link to="/">
+            <Link to="/" onClick={() => scroll.scrollToTop()}>
               <div className="link__text">Home</div>
             </Link>
+            <ScrollLink to="about" smooth={true}>
+              <div className="link__text">About Me</div>
+            </ScrollLink>
+            <ScrollLink to="experience" smooth={true}>
+              <div className="link__text">Skills</div>
+            </ScrollLink>
+            <ScrollLink to="education" smooth={true}>
+              <div className="link__text">Educations</div>
+            </ScrollLink>
             <Link to="/project">
               <div className="link__text">Project</div>
             </Link>

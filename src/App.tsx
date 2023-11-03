@@ -8,9 +8,9 @@ import { AnimatePresence, motion } from 'framer-motion'
 import { BASE_PATH, PROJECT_PATH } from './utils/routes'
 
 const Navbar = React.lazy(() => import('./components/Navbar'))
-const Home = React.lazy(() => import('./components/Home'))
+const Home = React.lazy(() => import('./pages/Home'))
 const Footer = React.lazy(() => import('./components/Footer'))
-const Project = React.lazy(() => import('./components/Project'))
+const Project = React.lazy(() => import('./pages/Project'))
 
 const HomePage: React.FC = (): JSX.Element => {
   return (
